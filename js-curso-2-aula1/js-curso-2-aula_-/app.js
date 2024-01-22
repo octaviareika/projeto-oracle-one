@@ -27,7 +27,8 @@ function verificarChute(){
 
 // id="reiniciar"
 function reiniciarJogo(){
-    
+    let numeroSecreto = gerarNumeroSecreto();
+
     botaoReiniciar.addEventListener('click', function(){
         campoChute.value = "";
         paragrado.innerHTML = "Tente adivinhar o número secreto entre 0 e 10";
